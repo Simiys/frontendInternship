@@ -1,0 +1,102 @@
+* {
+    font-family: 'Jost';
+}
+
+body {
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    margin: 0px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+#header {
+    display: grid;
+    grid-area: 'hd';
+    height: 80px;
+    width: 1fr;
+    background-color: black;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+#footer {
+    margin-top: 250px;
+    display: grid;
+    grid-area: 'dv';
+    width: 1fr;
+    height: 400px;
+    background-color: white;
+    height: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "h1 . ." "p1 p2 p3";
+    z-index: 2;
+}
+
+#divWithButton {
+    align-content: center;
+    justify-content: center;
+    display: grid;
+    grid-area: 'db';
+    margin-top: 50px;
+}
+
+#buy {
+    display: grid;
+    width: 350px;
+    height: 100px;
+    font-size: medium;
+    font-style: italic;
+    text-align: center;
+    font-size: larger;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 1);
+    border: 0px;
+    transition: all 0.5s ease-in-out;
+    font-size: 32px;
+}
+
+#name {
+    display: grid;
+    font-size: 64px;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+}
+
+#buy:hover {
+    background: rgba(255, 255, 255, 0.28);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    color: white;
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#h1F {
+    font-size: 64px;
+    color: black;
+    grid-area: h1;
+}
+
+.pF {
+    font-weight: 600;
+    font-size: 16px;
+    color: rgb(105, 105, 105);
+    justify-self: center;
+}
+
+.h1H {
+    font-size: 48px;
+    color: white;
+    margin-top: 0px;
+    font-weight: 100;
+}
